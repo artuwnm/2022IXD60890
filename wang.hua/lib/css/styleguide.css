@@ -391,8 +391,8 @@ a:hover{
     display: inline-block;
     width: 2em;
     height: 1em;
-    border: 0.1em solid var(--color-neutral-medium);
-    background-color: var(--color-neutral-light);
+    border: 0.1em solid var(--color-main-dark);
+    background-color: var(--color-main-light);
     border-radius: 1em;
     position: relative;
 }
@@ -403,7 +403,7 @@ a:hover{
    height: 0.8em;
    border-radius: 1em;
    position: absolute;
-   background-color: var(--color-white);
+   background-color: var(--color-main-medium);
    transition: all 0.3s;
 }
 .toggle input:checked + label::after {

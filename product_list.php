@@ -13,15 +13,42 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product List</h2>
 
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-			</ul>
+			<h3>Product List</h3>
+
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="img/bowl.jpeg">
+							<figcaption>
+								<div><a href="product_item.php?id=1">Bowl Set</a></div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="img/darkgreen.jpeg">
+							<figcaption>
+								<div><a href="product_item.php?id=2">Dark Green Cup Set</a></div>
+								<div>$8.99</div>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="img/heartcup Large.jpeg">
+							<figcaption>
+								<div><a href="product_item.php?id=3">Heart Cup Set</a></div>
+								<div>$8.99</div>
+							</figcaption>
+						</figure>
+					</div>
+		
 		</div>
+			
 	</div>
 
 </body>

@@ -1,0 +1,38 @@
+[
+	{
+       "name":"Hua Wang",
+       "type":"Student",
+       "email":"wanghua0309@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Eason Wang",
+       "type":"Student",
+       "email":"easonwang@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Norman Wang",
+       "type":"Singer",
+       "email":"normanwang@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"James Liu",
+       "type":"Student",
+       "email":"janesliu@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Amy Zhang",
+       "type":"Student",
+       "email":"amyzhang@gmail.com",
+       "classes":[608,605,613]
+	},
+	{
+       "name":"Mindy Zhang",
+       "type":"chef",
+       "email":"mingdzhang@gmail.com",
+       "classes":[608]
+	}
+]

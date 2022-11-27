@@ -9,30 +9,61 @@
 <body>
     
     <?php include "parts/navbar.php"; ?>
-    
-	<div class="container">
-		<div class="card soft">
-			<h2>Home</h2>
-            
-		</div>
-	</div>
 
-	<div class="view-window half" style="background-image: url(img/hello.jpeg);"></div>
+
+    <div class="view-window half" style="background-image: url(img/welcome.jpeg);"></div>
 
 	<div class="container">
         <article id="article1" class="article card soft">
             <div class="display-flex flex-align-center">
                 <div class="flex-stretch">
-                    <h2>Article 1</h2>
-                </div>
-                <div class="flex-none">
-                    <small>5:20am</small>
+                    <h2>THE ROUTE IS THE GOAL</h2>
                 </div>
             </div>
             <div class="article-body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cum autem recusandae asperiores incidunt soluta nisi, at vel minima illum aspernatur quis culpa ullam facilis deleniti esse officiis eos impedit consequuntur. Soluta, iure dolor rem. Cum similique, exercitationem asperiores numquam.</p>
-                <p>Quibusdam fugit modi, eum doloremque, esse vel doloribus, rerum voluptas consectetur, odio magnam tempore consequuntur maxime recusandae? Explicabo harum numquam aliquid blanditiis assumenda saepe sit ex. Cum officiis architecto, similique magnam vel esse odit, id autem, maxime rerum nobis facilis?</p>
-                <p>Nostrum at tempore beatae quam neque reiciendis ab necessitatibus sit, voluptas explicabo nam eaque. Aliquid fugit perferendis aperiam doloribus voluptatem eius soluta sit illo in incidunt, praesentium, architecto quo ratione deleniti molestiae voluptate dolores rerum ex sequi iusto id, asperiores!</p>
+                <p>In doing so, we are guided by Waldorf education and other alternative pedagogical approaches, such as Montessori, which are deeply rooted in our corporate DNA.</p>
+
+                <p>Small and big builders of the world will find everything they need to create new worlds and games ... so the same components may become a farm and later a hospital. On another occasion, a doll’s house or part of a fantasy land might be created.</p>
+
+                <p>With their progressive development, children are always finding new ways to play with our wooden toys. The minimalist, open design make them permanent companions on their way through childhood.</p>
+            </div>
+        </article>
+    </div>
+    <div class="container">
+        <article id="article1" class="article card soft">
+            <div class="display-flex flex-align-center">
+                <div class="flex-stretch">
+                    <h2>ALTERNATIVE PEDAGOGICAL THEORIES</h2>
+                </div>
+            </div>
+            <div class="article-body">
+                <p>In doing so, we are guided by Waldorf education and other alternative pedagogical approaches, such as Montessori, which are deeply rooted in our corporate DNA.</p>
+
+                <p>Small and big builders of the world will find everything they need to create new worlds and games ... so the same components may become a farm and later a hospital. On another occasion, a doll’s house or part of a fantasy land might be created.</p>
+
+                <p>With their progressive development, children are always finding new ways to play with our wooden toys. The minimalist, open design make them permanent companions on their way through childhood.</p>
+            </div>
+        </article>
+    </div>
+    <div class="container">
+        <article id="article1" class="article card soft">
+            <div class="display-flex flex-align-center">
+                <div class="flex-stretch">
+                    <h2>INFINITE GAME OPPORTUNITIES</h2>
+                </div>
+            </div>
+            <div class="article-body">
+                <p>The possible combinations of the individual articles are limitless and open up a broad field of infinite playing possibilities, with which we deliberately want to create a counterpoint to the digital media world.</p>
+
+                <p>For childhood needs worlds of experience that can be understood and experienced with one's hands!</p>
+
+                <p>An outstanding feature of all our toys is the velvety-rough surface, which results from the fact that we use colour glaze, which penetrates into the wood fibres and leaves a living surface. The individual parts are dipped by hand into the stain and we deliberately do not use a final protective varnish so we can preserve the positive properties of the wood.</p>
+
+                <p>We invite you on a journey through our different colour harmonies: Let yourself be carried away into the gentle world of pastel colours, or experience the special charm of our monochrome world. Discover the special warmth and natural beauty of our oiled toys in natural wood or simply indulge in the natural colour harmonies of the rainbow.</p>
+
+                <p>We hope you enjoy discovering!</p>
+
+                <p>Sincerely, Sven and Elke Grimm</p>
             </div>
         </article>
     </div>

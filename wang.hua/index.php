@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -28,6 +31,11 @@
                 <p>With their progressive development, children are always finding new ways to play with our wooden toys. The minimalist, open design make them permanent companions on their way through childhood.</p>
             </div>
         </article>
+    </div>
+    <div class="container"> 
+       <h2>BEST SELLER</h2>
+       <?php recommendedCategory("3 years old"); ?>
+
     </div>
     <div class="container">
         <article id="article1" class="article card soft">
@@ -68,8 +76,6 @@
         </article>
     </div>
 
-    
-   
 
 
 </body>

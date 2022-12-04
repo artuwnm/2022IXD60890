@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -38,6 +39,46 @@ include_once "lib/php/functions.php";
             </div>
         </article>
     </div>
+
+
+    <div class="container">
+        <div class="card soft">
+
+            <?php
+
+            include_once "lib/php/functions.php";
+            include_once "parts/templates.php";
+
+            $result = makeQuery(
+                makeConn(),
+                "
+                SELECT *
+                FROM `products`
+                ORDER BY `date_create` 
+                LIMIT 6
+                "
+            );
+
+            echo "<div class='productlist grid gap'>",array_reduce($result,'collectionTemplate'),"</div>";
+
+            ?>
+
+            
+           
+
+            
+        </div>
+
+    </div>
+        <div class="container">
+            <h2>Latest Cups</h2>
+            <?php recommendedCategory("cup");?>
+            <h2>Latest Bowls</h2>
+         <?php recommendedCategory("bowl");?>
+         <h2>Latest Plates</h2>
+         <?php recommendedCategory("plate");?>
+         </div>
+
 
 
 </body>

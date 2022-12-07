@@ -7,18 +7,28 @@
 	<?php include "parts/meta.php"; ?>
 
 </head>
+
+<body>
+
+	<?php include "parts/navbar.php"; ?>
+	<div class="container">
+		<div class="card soft">
+			<h2>About Us</h2>
+			<p>Do you want to buy handmade ceramics just for you? We provide diverse bowls, plates, and cups all handmade! Decorate your home with our products.</p>
+			
+
+			
+		</div>
+	</div>
+</body>
 <body>
 	
-	<?php include "parts/navbar.php"; ?>
 	<script>
 		const makeTable = (classes='') => {
 			const head = ['', 'Office','Name','Email','Phone'];
 			const body = [
-				['522',"Hamilton cline",'hcline@academyart.edu','555-2424'],
-				['512',"Fred McHale",'fmchale@academyart.edu','555-2424'],
-				['522',"Michael Catanzaro",'mcdsfaksjf@academyart.edu','522-2424'],
-				['514',"Hyewon Koo",'jjmirae@hanmail.net','522-2424'],
-				['515',"Joohee Kim",'joohee@gmail.com','522-2323'],
+				['Main Contact',"Jooyeon Kim",'jkim325@art.edu','555-2424'],
+				['Secondary Contact',"Joohee Kim",'jhee@academyart.edu','555-2425']
 			];
 
 			//let ran= Math.floor(Math.random()*links.length);
@@ -35,12 +45,15 @@
 		};
 	</script>
 
+
+	<div class="container">
 	<div class="card soft">
-			<h3>Contact</h3>
+			<h3>Contact Us</h3>
 
 			<script>makeTable("table lined vertical")</script>
 
 	</div> 
+</div>
 
 </body>
 </html>

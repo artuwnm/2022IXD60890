@@ -24,7 +24,7 @@ $empty_user = (object)[
 
 if (isset($_GET['action'])) {
 	switch($_GET['action']) {
-		case 'update':
+		case "update":
 			$users[$_GET['id']]->name = $_POST['user-name'];
 			$users[$_GET['id']]->type = $_POST['user-type'];
 			$users[$_GET['id']]->email = $_POST['user-email'];
@@ -33,7 +33,7 @@ if (isset($_GET['action'])) {
 			file_put_contents($filename, json_encode($users));
 			header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
 			break;
-		case 'create':
+		case "create":
 			$empty_user->name = $_POST['user-name'];
 			$empty_user->type = $_POST['user-type'];
 			$empty_user->email = $_POST['user-email'];
@@ -46,7 +46,7 @@ if (isset($_GET['action'])) {
 			file_put_contents($filename,json_encode($users));
 			header("location:{$_SERVER['PHP_SELF']}?id=$id");
 			break;
-		case 'delete':
+		case "delete":
 			array_splice($users,$_GET['id'],1);
 			file_put_contents($filename,json_encode($users));
 			header("location:{$_SERVER['PHP_SELF']}");
@@ -130,6 +130,7 @@ HTML;
 
 
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -171,21 +172,20 @@ HTML;
 
 			<nav class="nav">
 				<ul>
-			<?php  
+			<?php
 
-			for($i=0;$i<count($users);$i++){
-				echo "<li>
-					<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
-				</li>";
-			}
+					for($i=0;$i<count($users);$i++){
 
-			?>
+						echo "<li>
+							<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
+						</li>";
+					}
+
+					?>
 				</ul>
 			</nav>
-
-			<?php } ?>
+		<?php } ?>
 		</div>
 	</div>
-
 </body>
 </html>

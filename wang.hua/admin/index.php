@@ -17,70 +17,69 @@ $empty_product = (object)[
 // LOGIC
 try {
 	$conn = makePDOConn();
-	$action = isset($_GET['action']) ? $_GET['action'] : "";
-
-   switch($_GET['action']) {
-   	case "update": 
-   	   $statement = $conn->prepare("UPDATE
-   	   	`products`
-   	   	SET 
-   	   	`title`=?,
-   	   	`price`=?,
-   	   	`quantity`=?,
-   	   	`category`=?,
-   	   	`description`=?,
-   	   	`thumbnail`=?,
-   	   	`images`=?,
-   	   	`date_modify`=NOW()
-   	   WHERE `id`=?
-   	   ");
-   	$statement->execute([
-   		$_POST['product-price'],
-   		$_POST['product-quantity'],
-   		$_POST['product-category'],
-   		$_POST['product-description'], 
-   		$_POST['product-thumbnail'],
-   		$_POST['product-images'],
-   		$_GET['id']
-   	]);
-	   header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
-	   break;
-	case "create":
-	   $statement = $conn->prepare("INSERT INTO
-	      `products`
-	      (
-	        `title`,
-	        `description`,
-	        `price`,
-	        `category`,
-	        `quantity`,
-	        `thumbnail`,
-	        `images`,
-	        `date_create`,
-	        `date_modify`
-	      )
-	      VALUES (?,?,?,?,?,?,?,NOW(),NOW())
-	      ");
-	   $statement->execute([
-          $_POST['product-title'],
-          $_POST['product-description'],
-          $_POST['product-price'],
-          $_POST['product-category'],
-          $_POST['product-quantity'],
-          $_POST['product-thumbnail'],
-          $_POST['product-images']
-	   ]);
-	   $id = $conn->lastInsertId();
-	   header("location:{$_SERVER['PHP_SELF']}?id=$id");
-	   break;
-	case "delete":
-	   $statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
-	   $statement->execute([$_GET['id']]);
-	   header("location:{$_SERVER['PHP_SELF']}");
-	   break;
+	switch($_GET['action']) {
+		case "update":
+			$statement = $conn->prepare("UPDATE
+				`products`
+				SET
+					`title` =?,
+					`price` =?,
+					`quantity` =?,
+					`category` =?,
+					`description` =?,
+					`thumbnail` =?,
+					`images` =?,
+					`date_modify` =NOW()
+				WHERE `id`=?	
+				");
+			$statement->execute([
+				$_POST['product-title'],
+				$_POST['product-price'],
+				$_POST['product-quantity'],
+				$_POST['product-category'],
+				$_POST['product-description'],
+				$_POST['product-thumbnail'],
+				$_POST['product-images'],
+				$_GET['id']
+			]);
+			header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+			break;
+		case "create":
+			$statement = $conn->prepare("INSERT INTO
+				`products`
+				(
+					`title`,
+					`price`,
+					`quantity`,
+					`category`,
+					`description`,
+					`thumbnail`,
+					`images`,
+					`date_create`,
+					`date_modify`
+				)
+				VALUES (?,?,?,?,?,?,?,NOW(),NOW())
+				");
+			$statement->execute([
+				$_POST['product-title'],
+				$_POST['product-price'],
+				$_POST['product-quantity'],
+				$_POST['product-category'],
+				$_POST['product-description'],
+				$_POST['product-thumbnail'],
+				$_POST['product-images']
+			]);
+			$id = $conn->lastInsertId();
+			header("location:{$_SERVER['PHP_SELF']}?id=$id");
+			break;
+		case "delete":
+			$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
+			$statement->execute([$_GET['id']]);
+			header("location:{$_SERVER['PHP_SELF']}");
+			break;
 	}
-} catch (PDOException $e) {
-    die($e->getMessage());
+} catch(PDOException $e) {
+	die($e->getMessage());
 }
 
 

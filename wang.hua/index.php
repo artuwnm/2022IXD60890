@@ -9,12 +9,12 @@ include_once "parts/templates.php";
 
 	<?php include "parts/meta.php"; ?>
 </head>
-<body>
+<body class="flush">
     
     <?php include "parts/navbar.php"; ?>
 
 
-    <div class="view-window half" style="background-image: url(img/welcome.jpeg);"></div>
+    <div class="view-window half" style="background-image: url(img/welcome.jpg);"></div>
 
 	<div class="container">
         <article id="article1" class="article card soft">

@@ -23,12 +23,11 @@ include_once "parts/templates.php";
         </div>
 
     </div>
-    <div class="container" id="viewwindow">
-        </div>
-    <div class="view-window" style="background-image: url('img/ceramics.jpeg');">
+  
+
+    <div class="container">
+            <div class="view-window" style="background-image: url('img/street copy.jpeg');"></div>
     </div>
-
-
 
     <div class="container">
         <div class="card soft">
